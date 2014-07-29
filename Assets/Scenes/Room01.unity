@@ -91,7 +91,6 @@ GameObject:
   - 33: {fileID: 34934844}
   - 64: {fileID: 34934843}
   - 23: {fileID: 34934842}
-  - 114: {fileID: 34934841}
   m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
@@ -99,18 +98,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &34934841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 34934840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebf3e798ee5f94382184d013d5bbb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  col: {r: 1, g: 1, b: 0, a: 0}
 --- !u!23 &34934842
 Renderer:
   m_ObjectHideFlags: 0
@@ -123,7 +110,7 @@ Renderer:
   m_LightmapIndex: 0
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: de9004a8fd47cc7499b2d16d9f82ec84, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -359,7 +346,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 114796616}
   m_Layer: 0
-  m_Name: Statics
+  m_Name: _Statics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1542,6 +1529,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 465957898}
   m_RootOrder: 0
+--- !u!1 &1496860619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1496860621}
+  - 131: {fileID: 1496860620}
+  m_Layer: 0
+  m_Name: CrossHair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1496860620
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1496860619}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: edd2925151c56ba4e8a7381476594e16, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -16
+    y: -16
+    width: 32
+    height: 32
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1496860621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1496860619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0439596176, y: -.891073942, z: -.526565075}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013173684}
+  m_RootOrder: 0
 --- !u!1 &1614120673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1740,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {r: 1, g: 0, b: 1, a: 0}
+--- !u!1 &2013173683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2013173684}
+  m_Layer: 0
+  m_Name: _Gui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013173684
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013173683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .543959618, y: 1.39107394, z: .526565075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1496860621}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &2080407990
 GameObject:
   m_ObjectHideFlags: 0
